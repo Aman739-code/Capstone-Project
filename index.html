@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #F9F5FA;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 72px;
+            width: 1080px;
+            background-color: #CD37990F;
+            border-radius: 16px;
+            justify-content: space-between;
+            margin: 0 auto;
+            margin-top: 30px;
+            backdrop-filter: blur(96px);
+            box-shadow: 0px 4px 24px 0px #00000029;
+
+        }
+
+        .pageLinks {
+            display: flex;
+            gap: 20px;
+            margin-left: 30px;
+            font-family: 'Sen', sans-serif;
+            color: #421934;
+        }
+
+        .main-title {
+            font-size: 42px;
+            font-weight: 400;
+            line-height: 42px;
+            font-family: 'Dela Gothic One' , sans-serif;
+            width: 380px;
+            height: 30px;
+            color: #421934;
+            padding-bottom: 25px;
+            margin-right: 150px;
+        }
+
+        .socials {
+            margin-right: 30px;
+            font-family: 'Sen', sans-serif;
+            color: #421934;
+        }
+
+        .content {
+            width: 1344px;
+            height: 5881px;
+            padding: 48px 0;
+            margin: 0 auto;
+        }
+
+        .content1 {
+            height: 240px;
+            width: 1344px;
+            font-family: 'Dela Gothic One' , sans-serif;
+            font-weight: 400;
+            font-size: 120px;
+            line-height: 120px;
+            text-align: center;
+            color: #421934;
+            margin-top: 15px;
+        }
+
+        .content1 img {
+            width: 1344px;
+            height: 672px;
+            border-radius: 22px;
+            margin-top: 70px;
+        }
+
+        .content2 {
+            margin-top: 800px;
+            width: 900px;
+            height: 312px;
+            max-width: 900px;
+            font-family: 'Dela Gothic One' , sans-serif;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 52px;
+            color: #421934;
+            text-align: center;
+            margin-left: 200px;
+        }
+
+        .photo2 {
+            width: 648px;
+            height: 664px;
+            border-radius: 22px;
+            margin-top: 70px;
+        }
+
+        .photo3 {
+            width: 648px;
+            height: 443px;
+            border-radius: 22px;
+            margin-bottom: 220px;
+            margin-left: 40px;
+        }
+
+        .photo4 {
+            border-radius: 22px;
+            margin-top: 50px;
+            margin-left: 190px;
+        }
+
+        .content5 {
+            display: block;
+        }
+
+        .photo5 {
+            border-radius: 22px;
+            width: 648px;
+            height: 443px;
+            margin-bottom: 220px;
+        }
+
+        .photo6 {
+            border-radius: 22px;
+            width: 648px;
+            height: 664px;
+            margin-left: 41px;
+            margin-top: 40px;
+        }
+
+        .text1 {
+            width: 648px;
+            height: 32px;
+            font-family: 'Dela Gothic One' , sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: -0.01em;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #421934;
+            margin-top: 100px;
+        }
+
+        .text2 {
+            font-family: 'Sen' , sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #421934;
+            margin-left: 700px;
+            margin-top: -50px;
+        }
+
+        .text3 {
+            font-family: 'Sen' , sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #421934;
+            margin-left: 1000px;
+            margin-top: -180px;
+        }
+
+        .photo7 {
+            width: 416px;
+            height: 323px;
+            border-radius: 22px;
+            margin-top: 100px;
+        }
+
+        .project1_Name {
+            width: 416px;
+            height: 24px;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'Sen' , sans-serif;
+            color: #421934;
+            line-height: 24px;
+        }
+
+        .name1 {
+            width: 416px;
+            height: 24px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+            color: #4219349E;
+        }
+
+        .photo8 {
+            border-radius: 22px;
+            width: 416px;
+            height: 416px;
+        }
+
+        .project2_Name {
+            width: 416px;
+            height: 24px;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'Sen' , sans-serif;
+            color: #421934;
+            line-height: 24px;
+        }
+
+        .name2 {
+            width: 416px;
+            height: 24px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+            color: #4219349E;
+        }
+
+        .project2 {
+            margin-left: 460px;
+            margin-top: -375px;
+        }
+
+        .project3_Name {
+            width: 416px;
+            height: 24px;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'Sen' , sans-serif;
+            color: #421934;
+            line-height: 24px;
+        }
+
+        .name3 {
+            width: 416px;
+            height: 24px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+            color: #4219349E;
+        }
+
+        .photo9 {
+            border-radius: 22px;
+            width: 416px;
+            height: 234px;
+        }
+
+        .project3 {
+            margin-left: 920px;
+            margin-top: -470px;
+        }
+
+        .photo10 {
+            border-radius: 22px;
+            width: 416px;
+            height: 234px;
+        }
+
+        .project4_Name {
+            width: 416px;
+            height: 24px;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'Sen' , sans-serif;
+            color: #421934;
+            line-height: 24px;
+        }
+
+        .name4 {
+            width: 416px;
+            height: 24px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+            color: #4219349E;
+        }
+
+        .project4 {
+            margin-top: 140px;
+        }
+
+        .photo11 {
+            border-radius: 22px;
+            width: 416px;
+            height: 323px;
+        }
+
+        .project5_Name {
+            width: 416px;
+            height: 24px;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'Sen' , sans-serif;
+            color: #421934;
+            line-height: 24px;
+        }
+
+        .name5 {
+            width: 416px;
+            height: 24px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+            color: #4219349E;
+        }
+
+        .project5 {
+            margin-left: 460px;
+            margin-top: -200px;
+        }
+
+        .photo12 {
+            border-radius: 22px;
+            width: 416px;
+            height: 416px;
+        }
+
+        .project6_Name {
+            width: 416px;
+            height: 24px;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'Sen' , sans-serif;
+            color: #421934;
+            line-height: 24px;
+        }
+
+        .name6 {
+            width: 416px;
+            height: 24px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+            color: #4219349E;
+        }
+
+        .project6 {
+            margin-left: 920px;
+            margin-top: -550px;
+        }
+
+        .photo13 {
+            border-radius: 22px;
+            width: 416px;
+            height: 416px;
+        }
+
+        .project7_Name {
+            width: 416px;
+            height: 24px;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'Sen' , sans-serif;
+            color: #421934;
+            line-height: 24px;
+        }
+
+        .name7 {
+            width: 416px;
+            height: 24px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+            color: #4219349E;
+        }
+
+        .project7 {
+            margin-top: -50px;
+        }
+        
+        .photo14 {
+            width: 416px;
+            height: 234px;
+            border-radius: 22px;
+        }
+
+        .project8_Name {
+            width: 416px;
+            height: 24px;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'Sen' , sans-serif;
+            color: #421934;
+            line-height: 24px;
+        }
+
+        .name8 {
+            width: 416px;
+            height: 24px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+            color: #4219349E;
+        }
+
+        .project8 {
+            margin-left: 460px;
+            margin-top: -285px;
+        }
+
+        .photo15 {
+            width: 416px;
+            height: 323px;
+            border-radius: 22px;
+        }
+
+        .project9_Name {
+            width: 416px;
+            height: 24px;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'Sen' , sans-serif;
+            color: #421934;
+            line-height: 24px;
+        }
+
+        .name9 {
+            width: 416px;
+            height: 24px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+            color: #4219349E;
+        }
+
+        .project9 {
+            margin-left: 920px;
+            margin-top: -375px;
+        }
+
+        .opinion {
+            width: 1260px;
+            height: 52px;
+            font-family: 'Dela Gothic One' , sans-serif;
+            font-size: 48px;
+            line-height: 52px;
+            text-align: center;
+            color: #421934;
+            font-weight: 400;
+            margin-left: 30px;
+            margin-top: 70px;
+        }
+
+        .opinion1 {
+            background-color: #DECFD966;
+            height: 216px;
+            width: 288px;
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 40px;
+        }
+
+        .client1 {
+            width: 48px;
+            height: 48px;
+            border-radius: 999px;
+        }
+
+        .client1_Name {
+            width: 180px;
+            height: 20px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 20px;
+            margin-left: 70px;
+            margin-top: -50px;
+            color: #421934;
+        }
+
+        .client1_Role {
+            width: 180px;
+            height: 20px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: #4219349E;
+            margin-left: 69px;
+        }
+
+        .client1_Opinion {
+            width: 180px;
+            height: 96px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #421934;
+            margin-left: 65px;
+            margin-top: 30px;
+
+        }
+
+        .opinion2 {
+            background-color: #DECFD966;
+            height: 216px;
+            width: 288px;
+            border-radius: 16px;
+            padding: 24px;
+            margin-left: 350px;
+            margin-top: -265px;
+        }
+
+        .client2 {
+            width: 48px;
+            height: 48px;
+            border-radius: 999px;
+        }
+
+        .client2_Name {
+            width: 180px;
+            height: 20px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 20px;
+            margin-left: 70px;
+            margin-top: -50px;
+            color: #421934;
+        }
+
+        .client2_Role {
+            width: 180px;
+            height: 20px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: #4219349E;
+            margin-left: 69px;
+        }
+
+        .client2_Opinion {
+            width: 180px;
+            height: 96px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #421934;
+            margin-left: 65px;
+            margin-top: 30px;
+
+        }
+
+        .opinion3 {
+            background-color: #DECFD966;
+            height: 216px;
+            width: 288px;
+            border-radius: 16px;
+            padding: 24px;
+            margin-left: 700px;
+            margin-top: -265px;
+        }
+
+        .client3 {
+            width: 48px;
+            height: 48px;
+            border-radius: 999px;
+        }
+
+        .client3_Name {
+            width: 180px;
+            height: 20px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 20px;
+            margin-left: 70px;
+            margin-top: -50px;
+            color: #421934;
+        }
+
+        .client3_Role {
+            width: 180px;
+            height: 20px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: #4219349E;
+            margin-left: 69px;
+        }
+
+        .client3_Opinion {
+            width: 180px;
+            height: 96px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #421934;
+            margin-left: 65px;
+            margin-top: 30px;
+
+        }
+
+        .opinion4 {
+            background-color: #DECFD966;
+            height: 216px;
+            width: 288px;
+            border-radius: 16px;
+            padding: 24px;
+            margin-left: 1050px;
+            margin-top: -265px;
+        }
+
+        .client4 {
+            width: 48px;
+            height: 48px;
+            border-radius: 999px;
+        }
+
+        .client4_Name {
+            width: 180px;
+            height: 20px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 20px;
+            margin-left: 70px;
+            margin-top: -50px;
+            color: #421934;
+        }
+
+        .client4_Role {
+            width: 180px;
+            height: 20px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: #4219349E;
+            margin-left: 69px;
+        }
+
+        .client4_Opinion {
+            width: 180px;
+            height: 96px;
+            font-family: 'Sen' , sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #421934;
+            margin-left: 65px;
+            margin-top: 30px;
+        }
+
+        .container {
+            margin-left: -25px;
+            margin-top: 100px;
+        }
+
+        .footer_text1 {
+            width: 365px;
+            height: 32px;
+            font-family: 'Dela Gothic One' , sans-serif;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 32px;
+            color: #4219349E;
+            margin-top: -100px;
+            margin-left: 60px;
+        }
+
+        .footer_text2 {
+            width: 120px;
+            height: 24px;
+            font-family: 'DM Mono', monospace;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            margin-left: 1300px;
+            color: #421934;
+            border: 1px solid #221B2029;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="pageLinks">
+            <p>Portfolio</p>
+            <p>About</p>
+            <p>Blog</p>
+        </div>
+
+        <div class="main-title">MemphisDesign</div>
+
+        <div class="socials">Contact</div>
+    </div>
+
+    <div class="content">
+        <div class="content1">
+            Welcome to My
+            World of Design
+            <img class="photo1" src="https://s3-alpha-sig.figma.com/img/49fe/5a91/22285802d27bf4ffb8b6d0c906a56cef?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jR6dOy3pyPufdHvc-8G3SoxdyCHA6trNvu2ZaDEV-HadY3Uw86Z8oIfRpUxEPu2Jyt~LYc67zgRx6jsnMSJtsb1c84c4c8sSTTUBUzjUANVBk6P6AdeDmCHsRILUrY8mSLL8HYBrzAMwFHcGYwkREsGgXTbPC4jwrYG~-fc2w6rGYmOplzqQZWA3G-xiULDlnRqJi3YFb7bu3ACeU4Bgmh37n4C95SyOhmc~FmPHee7ynWURd0TETOloPieF8mG5P-JbPkDxg7~zUcEoVKC2pnr4~xpbwjrErpZpLcZMPyG9NM~k~rKi4ivgF9Rtb-lfR4F6naz5HiDit6yqEaeArg__" alt="">
+        </div>
+
+        <div class="content2">I'm a designer inspired by the bold, playful aesthetics of the Memphis design movement. My work embraces vibrant colors, geometric shapes, and unconventional layouts.</div>
+
+        <div class="content3">
+            <img src="https://s3-alpha-sig.figma.com/img/da65/90d8/04f7385fc89c6866e08d8718abc54f7c?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SyvGqLu~Vfi5AE4p5BEleXMRJRVKOrY7Kn~~0JwSabEnuc1lu6J9EOKfBLdtbMmuNh1McIo7USEAG~6U8m~KLs3Nfn8R7LWVAWYGiUxhKUtlLhTEWjlH3bsI2o4tSTLg54BcQBscK~VvIBNwQ7fvwqEjBGfgiYcOHHC35z5Q5MVs0~h-FmdJAmlnDhBkgWMxcP~VZW~wkxOSypXrzOBb676o6XNDWMSXfeodLRFdmhBtzGuOMpqpBtoehclprSsz21cCroZ~tQ2BEuLPvZM2BdAFUSeJWZX2OA5GnB3iEmAG70Mhxk6IIc2uKl5FiiLDXIq34NF817ijhIJ9S~asoA__" alt="" class="photo2">
+            <img src="https://s3-alpha-sig.figma.com/img/12fd/f081/aee3c4e1c288f0fdef26fd258dc92e16?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KQiCl5kahWGXYfCBF4-2hxhbM~hLk4MZbjZokhf5DTEq4OINeWNr3OYpk2B5J-6ah508FCcaOXCtHxWz-7WndkMYVzf~M~uKatn2vAVmkt~rIVW~YRLsd~3TM2yi3HmtwsefSCYM6g6LCASrbFSWS1IsYRPHHnf~KtRO8vG~HOxviWv1i6B-zkarIR577YbFptz5SEIQwgXcCTObtlWkVNurJ7oji5AMi9~2jQtg1szTDcjWwQaMox45WT0GsH-O7Oed3xERNxbCuseNanBjAGI7K75OOI3FZdjZLvzTbNraC5ZxUB4q77hH~oveh56kAkavNGWPxFoY3USWIJIVBw__" alt="" class="photo3">
+        </div>
+
+        <div class="content4">
+            <img src="https://s3-alpha-sig.figma.com/img/701a/766d/c7e47b81a9879d9c1d34ac5b78557980?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HKEEehzx~sH4gy37YDRUVTQLf~4LDQgV59Pgb2YF7B1M3MYrfF8ruYscEwWpozuSHngtgtbFblAHDwMGX44Sd~ZgjzVKfm4sKRa5o6MoiMgBz3xEANCzzs06QshndxINL7r8fyWRX2piUqSnJcfoN8MuFfIlHDtQiyG4ZbILPgfYwXboBSJtjEpBAMOsttzw3VHcyDJNrEyhIdx~CLCg~EIVHUfK2QGpES8i8uDnB1GsJAacMclSWCqUebs5BdOrMmLLNGggZC16WhVvAti07qfh3ivWI9chxkGGQe7hJNnUA2Fu9OzFFopDhiGYiheQTtM1~A3huIZnFDgfFEi5hw__" alt="" class="photo4">
+        </div>
+
+        <div class="content5">
+            <img src="https://s3-alpha-sig.figma.com/img/d63c/b44d/ab9f620b477d1cc4f018477fa5629fa8?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=q2Gyoqh1tSLI2BssSJ2N5Bb-Xm8sSD1VvfiT3D~A-68sxdTNyJC1D4ytirDjM24I7h9EkN1jZeCHsCfWZSiwR4NRC33b7CzOlB6dvCTL~tLr9lAYcEU67I75BZgfr9nwuxvO353ADzi4txeQhrilvNL1~h4Pt9cdRiSokAPiVAhk2e2i21eUbojuszj4-Yw7uT8PBK17xW650vFJ0WYpv4VbdY9f-r8T~tH1hOKe7K9ctljHvQl1M3N4ppv9YQ0ak2Hp9QlligfQc5FRIy~Y6JWQUb~3NkiH4hUyXnA~UoMYqzJ7vKVuHKNQdV4Le6rAWQKpJxFPnxlXbqdcnl~M9w__" alt="" class="photo5">
+            <img src="https://s3-alpha-sig.figma.com/img/1ad2/3cad/13930abd1331ea55f75c8d39956efd1c?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OdxgYcOcPwdPfR7x5h1pWvN9F~2BYCzb2Zt7CLxX~~x6ALD4nNEaxjBUHX~JKGp1nfe7BgefCe~qh0OLKlaZcPwJy9-VdZTh-KvOopfYn3QbYgH45UwOkMsdJtMevKff9yactTV9Gx0YPW2zu3SltVNwvShEvwhyqu-zCOK-8IyKlwJ2xAesjYAJ5GCgndYADUILNxVD-phhBIBrQzedd0PMwwAF6cT-dT-8otaRlJMWEG44KtXwpt2LAogwkJsKXXXuA0EuPMuZM9fJnlJeR2SKSDDYfNs3GZn-uATjnhSyOVvEOiIs7N-e5puEzBGLvRixvn-jxE-j1GVV1-T0Dg__" alt="" class="photo6">
+        </div>
+
+        <div class="content6">
+            <div class="text1">
+                Services
+            </div>
+
+            <div>
+                <div class="text2">
+                    <p>Graphic Design</p>
+                    <p>Brand Identity</p>
+                    <p>Art Direction</p>
+                    <p>Packaging Design</p>
+                </div> 
+            </div>
+
+            <div>
+                <div class="text3">
+                    <p>Web Design</p>
+                    <p>Illustration</p>
+                     <p>Print Design</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content7">
+            <div class="project1">
+                <img src="https://s3-alpha-sig.figma.com/img/b59d/e6f3/063afe3cec850fe03da2364ecc9ae8a2?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JKu8QbKZeLIl4GZMYlRVQ3RRsB~1Z5zjVmlqryjcvS2ZYGtX3It2rCHV7FqVocNbyGPdrQh8EWYM1AM5MJikiSMRE3iffZ954Ip1iKxZbWWJu98Uzi~JKHCt10unlaNKvVgmIigSQuYbC82YPXNJvB9ZamEnmU2mwhZtPYFOhk~H5ituQbLdrmTWxxl2lu7VVj~6rZpnHwr2pk2HcdS5njMkQo6QjmeQtBGNxebsRCDSqrTpEVSVlZkA3ZTFMwIUR0BuadMY9ROa4lN9ETBf1ESULocIlYYldlEpz1TpYRSeksIbTbf1oMw6S-Myjh~Dwk73WkFq0PkPoWYdYzWA3A__" alt="" class="photo7">
+                <div class="project1_Name">Project 1</div>
+                <div class="name1">Graphic Design</div>
+            </div>
+
+            <div class="project2">
+                <img src="https://s3-alpha-sig.figma.com/img/47c0/4a8f/97b68cf83d41fab6649de8c0ea4fcdd7?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=O026nfH4DQ6~cEZFqo5JtMin5sChcgTWI2g9A0KJPo9uQcDhqEw0ZrvpR-Nt~0i5jpzY4upCOXs8JisBlJsmKCEbNBy6g9SL-47OgD2Ww0V-kgjxvtHaenQsZ6B2GEoInklu5qogxxeABloJDCt4NQRMn-GOYiH~to03HYcWWkzHVeszGdlwKJpU3tiMzCWtBl70lcAgjJEBINNP7QyB4whG9~GYqUwt9TCBS0i-vqrFWxbEgnpTX6DLKkj4fOsmwv7VhLS67aLGZdxgyZ2In~pb0FrFuKUj6miM1mHuU~taigzwokBuaUKo~G87iLULerd51lll2xzgoxUU7ldG7g__" alt="" class="photo8">
+                <div class="project2_Name">Project 2</div>
+                <div class="name2">Illustration</div>
+            </div>
+
+            <div class="project3">
+                <img src="https://s3-alpha-sig.figma.com/img/47c0/4a8f/97b68cf83d41fab6649de8c0ea4fcdd7?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=O026nfH4DQ6~cEZFqo5JtMin5sChcgTWI2g9A0KJPo9uQcDhqEw0ZrvpR-Nt~0i5jpzY4upCOXs8JisBlJsmKCEbNBy6g9SL-47OgD2Ww0V-kgjxvtHaenQsZ6B2GEoInklu5qogxxeABloJDCt4NQRMn-GOYiH~to03HYcWWkzHVeszGdlwKJpU3tiMzCWtBl70lcAgjJEBINNP7QyB4whG9~GYqUwt9TCBS0i-vqrFWxbEgnpTX6DLKkj4fOsmwv7VhLS67aLGZdxgyZ2In~pb0FrFuKUj6miM1mHuU~taigzwokBuaUKo~G87iLULerd51lll2xzgoxUU7ldG7g__" alt="" class="photo9">
+                <div class="project3_Name">Project 3</div>
+                <div class="name3">Packaging Design</div>
+            </div>
+
+            <div class="project4">
+                <img src="https://s3-alpha-sig.figma.com/img/d03d/9bba/01d54c0727eb8cc239fbabe349eb8a1e?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=K8AvLowS1AgizLwql1k-AaqGjUMQvt6cyQTiT8T5DueX5IbZeeoTbMVYEpzw1nYi1ke1SgleHQyQ6ABDR~GKiEGGSaCFPVCnSP9KdeIU0WhirGSlWZcfk6EdBuRi5RKPLEb6Qhxgi4wlU7HTKpL5JiODNqoEm8JzzlXwx8GqKCOvxI0wvUaAPJ7ZEsFEUIKwdIE4p2frvQsRdEmIjtSsC-0THBGV41Gqg5gYzKJCv1p8jmLLnMeyivFoXzToFOEV9mEEEpY8ndCHPD6-42isdDFcfVqvIt6Z-cllLqF32175N6biRKFW6sScen97laM~mPpchXHjkp7Jc6fnw9PKeA__" alt="" class="photo10">
+                <div class="project4_Name">Project 4</div>
+                <div class="name4">Web Design</div>
+            </div>
+
+            <div class="project5">
+                <img src="https://s3-alpha-sig.figma.com/img/09b7/f0f8/41cbc651811e84b35f15fbade80e6879?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Oz3pvw-ACN6TdmRAY5qt83vuGFYuOUMbf7Hz5KX8dyqZDHPWaiMuGqfaxr58vjcGcI5QHiiAAitJ3~7tJnb5kX9FZc4v8KV4lr~bswu5DSQ4bLtnlM~s32KjOY~YUGSM68BT~J~CBzdAdldXv2fFort67baZcuz9cNyjXLjBN92U9fORsQbmJx4ledRdWhoz~IFizTidfKJPdXl5mxvVPfE2adICVPnoz2ops~WPB49cpdQ0sXBSlMQEAla1b3EPKzwaNv3dZeBUUHPUL~R66qP2~MKugiiMIVqOv1MSppqKH7sbWVPQ-Lw3wIwPyybVuzo3dCgm2g9LV-HSgAlXew__" alt="" class="photo11">
+                <div class="project5_Name">Project 5</div>
+                <div class="name5">Art Direction</div>
+            </div>
+
+            <div class="project6">
+                <img src="https://s3-alpha-sig.figma.com/img/bc71/18b8/32e26e50f580a4968d0dd0de5b84f2ff?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KEeawdJAcxVS1L~xl18j5U8dZj1mRVArUs~x94l0TK~KT9viQ7cu3EXn29wBBET7hZNVurWyu4A12~9h4NXRHZecd4AayX12W0Y2VWlyPxP65GBT~ggf-vG4eJaYTmRy562JOuPBBNPR~RDv996FQyWZEuKqmxhRHifWvJATHBzJHoWprQZKw8FbNEz4DK-P2rMKRvenzZHfT0gCQpL5cVXM4q3jI5KZga3xiwrH3HYRtgOxsT3rLNc9wYOSp7ZAGmJViz4g0qiWgu4RVAAxG5bQYdh6crSKOA061lOHZBcis-6~l81acqvAVdgm8jjlb8PtcDsAs-2l1icLnId8dw__" alt="" class="photo12">
+                <div class="project6_Name">Project 6</div>
+                <div class="name6">Graphic Design</div>
+            </div>
+
+            <div class="project7">
+                <img src="https://s3-alpha-sig.figma.com/img/74b2/dfc8/35fe03fcd2f4715edc24f314379f753b?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ci~eJBAyO8RQlVb49C041JN0nX7KEIsVNJSVqC1x9FkwaNakQfTeddlpMD22FVV9MqvPCkgGdecAGZkW5pQjqkKSbEDz2kY1qege8OLuO~u2vdnqyNGDh318tqTlj96wQwyM4ulNzaKbDj9CuIsKGmphp~La9h1QVVbg-lIhOsOYsKkZrt0T0k8uG5Xq5D5aTaf-TIXo6KObERlFBKbKEwULXNRgw5JI-vLq2nOXME4DwOSo1fgJ~EZvE-ksfoqGa9p7p-Ifkupbsxms1SREx1f3R9IEURKIvvIJE4Bcim0ys7m8F8Bzq8BmONcQusFViJKgpTsQ1qSTithlXTJTOw__" alt="" class="photo13">
+                <div class="project7_Name">Project 7</div>
+                <div class="name7">Brand Identity</div>
+            </div>
+
+            <div class="project8">
+                <img src="https://s3-alpha-sig.figma.com/img/ee26/4890/0bc9838415a82016b93017559846e17b?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=b5-oTT6T6LI6tFRL2CXrRWv8yidQgZHwdCAu~ozxea6Ek3VQq2eIN6823lpALkjjjpP-~MrWWxCj84so4i0XhNLMRB1UqVZw-YliVMEtWCVCqfSiAqgvGeEmbAy~HB7g5AV80L5O97zO2jfDebMMax1APJYCUoLNcKAIsKPXBfEEmUkg8hHEpV50a9AA4SvSViGbFyljUznYjID4LGtRfkT3U7twXETmID7c9TRp6jNWnlvcNEQfnaI~rTYdVVNHupTUmgvofLWs19wjQbjhOXGLpRZ1M-0yic02cozn~ugzDiRMycjM54pYTrrCMBDKHRvvWP~EPWlTb~Mk~~ynaQ__" alt="" class="photo14">
+                <div class="project8_Name">Project 8</div>
+                <div class="name8">Print Design</div>
+            </div>
+
+            <div class="project9">
+                <img src="https://s3-alpha-sig.figma.com/img/ce38/1f21/f90be81f464bf570067028d4e623a2b5?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QP2gye0wfsO25BRBKVWsWVCaw1r4YrIrYIDIjTQgd002riZh223zLwlX2f4Xmgmi~c-pRNQOO1IvmdNOHboSpZOcJ7ZGuBl1RAPMhv1S3zxlTwsVVfYQflQvV9aPS3pk4eqtLJVese3z8axhiZBLGJ~MMFC1ntF90YjJMPMxzwhm4nUHbO79zaoPb-LlOzIsRIarzI7YgFJYVak9oUDceBUK5VaHyiptGR2d37VZonpXpKuoCUulCM3~KPpISpyxnVFMKWfo4NtHHwauap5T4jare8HuUlvP2sQLWX0UdWkM2WuYSHWURX1GjQ-aNuB7zjvhD3OLbkffA0UHk7c~XA__" alt="" class="photo15">
+                <div class="project9_Name">Project 9</div>
+                <div class="name9">Web Design</div>
+            </div>
+        </div>
+
+        <div class="content8">
+            <div class="opinion">What Clients Say</div>
+            <div class="container">
+                <div class="opinion1">
+                    <img src="https://s3-alpha-sig.figma.com/img/3f42/5c4a/263df5824e33da60caf16aeb08b73a9c?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Y3jNL21DnvdB7h4yl9rL0uT2nuPKLZBIe4R1iGoYCZ1hN1LjYmb~OPUw0FMfTSJ~dEQmcZ3W-3PTCh5PsIyr2E41nypFUjeaV8obFwsrTrIDvLgjsspCh7uS~1d9r6gU4bgczpjG1XMObDJWp8eG3crgLtJn5yI8rwcWnHM4UWMIJu2Yhvx3khRxQ~cgYu0zhpSsUxhVNDshHRj2L5lH36yj6LfCoX0vhMU3Hg~-RU3BTFFppjMiafNTQTLI~cbR-~--vKAq9HSEwNKPrXWlub-ZiW4f18YYiKLrxKL3TACLGiv2NpCNs-yPhw9JF06-8h5Cfmx-9dVPVUTALHl-CQ__" alt="" class="client1">
+                    <div class="client1_Name">Alaric Wren</div>
+                    <div class="client1_Role">Creative Director</div>
+                    <div class="client1_Opinion">Amazing work, truly captures the essence of the Memphis design.</div>
+                </div>
+    
+                <div class="opinion2">
+                    <img src="https://s3-alpha-sig.figma.com/img/ff25/373a/2545d30b387e3c237a07d13b2fec539a?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qNautkfuk1Gqd0jYyc2CCAim8iP99kKHKZVEBcLn6rk8f~64pm1BFl0My9~VaytWCZKzyMVyhjYmdks8q34FDRcbiSqRSZ~TqKWttSwH5vCIbDrAhFhVN8-YeFIN07Bo6GMzYbjZPNwSH1OXIe~bugXAgoGhKRaKRHnmZhzcsrlQ7bd4b~ujhf~UteOXKyeLF3mldhiMzwAb4WN48xVUyAFUQIixZymWnF~wHS2qUzOX53zwJKKkF-worHIS9MxEYgvCijpk-7wKL2Pa1oTcvKYk~Z-I5nT9uLtxSveWnLgh2Ma-Qrvx2XNoEMKuQEkppvQkKUtH9W-A1hL81mIadw__" alt="" class="client2">
+                    <div class="client2_Name">Cressida Blythe</div>
+                    <div class="client2_Role">Brand Manager</div>
+                    <div class="client2_Opinion">Vibrant and unique designs that stand out.</div>
+                </div>
+    
+                <div class="opinion3">
+                    <img src="https://s3-alpha-sig.figma.com/img/ff25/373a/2545d30b387e3c237a07d13b2fec539a?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qNautkfuk1Gqd0jYyc2CCAim8iP99kKHKZVEBcLn6rk8f~64pm1BFl0My9~VaytWCZKzyMVyhjYmdks8q34FDRcbiSqRSZ~TqKWttSwH5vCIbDrAhFhVN8-YeFIN07Bo6GMzYbjZPNwSH1OXIe~bugXAgoGhKRaKRHnmZhzcsrlQ7bd4b~ujhf~UteOXKyeLF3mldhiMzwAb4WN48xVUyAFUQIixZymWnF~wHS2qUzOX53zwJKKkF-worHIS9MxEYgvCijpk-7wKL2Pa1oTcvKYk~Z-I5nT9uLtxSveWnLgh2Ma-Qrvx2XNoEMKuQEkppvQkKUtH9W-A1hL81mIadw__" alt="" class="client3">
+                    <div class="client3_Name">Hespera Quinn</div>
+                    <div class="client3_Role">Art Director</div>
+                    <div class="client3_Opinion">A fresh take on postmodern design, highly recommended.</div>
+                </div>
+    
+                <div class="opinion4">
+                    <img src="https://s3-alpha-sig.figma.com/img/c0f1/2030/6916bd84d9b9d11fdf1302c5ef501270?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=I~-QitoC2N7Y959myJFXJ1BKAFEBaQjrc7ok42m4M0ZRKzJvDoxkLhPKKixOootv0cdgTtmCpFSv2Z9Reh7dmJaaiTi2pdee7fLaJarakYTRxGgU51c6kpaea7bXMcx7JEJ3zLuSyhijaR4rDFFYS9ySaRIaVo8~aZt9A-~09IkwOT9rb9qQMGMvz-zTNCK68re8-ERykKBvg6kiwwYVea1XvBYFv8DtLQ2N5S1-GjB5n6BeelYQN0PpvznKdtF1ZbZ4TbREd5Eo2XRuCtF5h-vVEc4KfO9UvfWEbcdLRmGvV~JPuG7KkoTh0dqFhbJElliSf4kz8xkplF4PPBN5zQ__" alt="" class="client4">
+                    <div class="client4_Name">Zephyrine Ash</div>
+                    <div class="client4_Role">Marketing Specialist</div>
+                    <div class="client4_Opinion">Innovative and playful designs that are always on point.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer_text1">2023 MemphisDesign</div>
+
+        <div class="footer_text2">Contact Me</div>
+    </div>
+</body>
+</html>
